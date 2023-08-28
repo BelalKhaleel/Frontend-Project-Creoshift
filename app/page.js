@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function Page() {
   return (
     <>
-      <div className="bg-gray-900 h-screen">
-        <header className="bg-gray-800 p-10">
+      <div className="bg-primary h-screen">
+        <header className="bg-secondary p-10">
           <div className="header-top flex justify-between items-center mb-10">
             <div className="relative">
               <div className="w-11 h-1 bg-white rounded">
-                <span className="spot middle-spot absolute w-1.5 h-3 bg-gray-800 rounded-full transform -translate-x-1/2 -translate-y-1/2 left-1/2"></span>
-                <span className="spot three-fourth-spot absolute w-1.5 h-3 bg-gray-800 rounded-full transform -translate-x-1/2 -translate-y-1/2 left-3/4"></span>
+                <span className="spot middle-spot absolute w-1.5 h-3 bg-secondary rounded-full transform -translate-x-1/2 -translate-y-1/2 left-1/2"></span>
+                <span className="spot three-fourth-spot absolute w-1.5 h-3 bg-secondary rounded-full transform -translate-x-1/2 -translate-y-1/2 left-3/4"></span>
               </div>
             </div>
             <Image
@@ -20,7 +20,7 @@ export default function Page() {
             />
           </div>
           <nav className="text-white">
-            <ul className="flex gap-3 justify-center text-gray-600">
+            <ul className="flex gap-3 justify-center text-tertiary">
               <li className="pb-3 flex-1 relative font-bold">
                 Pages
                 <div className="absolute bottom-0 w-full h-1 bg-white rounded"></div>
@@ -30,36 +30,36 @@ export default function Page() {
                 <span className="text-xs font-thin flex items-center">
                   (5/12)
                 </span>
-                <div className="absolute bottom-0 w-full h-1 bg-gray-600 rounded"></div>
+                <div className="absolute bottom-0 w-full h-1 bg-tertiary rounded"></div>
                 <div className="absolute bottom-0 w-5/12 h-1 bg-white rounded"></div>
               </li>
-              <li className="pb-3 flex-1 border-gray-600 relative font-bold">
+              <li className="pb-3 flex-1 border-tertiary relative font-bold">
                 Scalability
-                <div className="absolute bottom-0 w-full h-1 bg-gray-600 rounded"></div>
+                <div className="absolute bottom-0 w-full h-1 bg-tertiary rounded"></div>
               </li>
-              <li className="pb-3 flex-1 border-gray-600 relative font-bold">
+              <li className="pb-3 flex-1 border-tertiary relative font-bold">
                 Requirements
-                <div className="absolute bottom-0 w-full h-1 bg-gray-600 rounded"></div>
+                <div className="absolute bottom-0 w-full h-1 bg-tertiary rounded"></div>
               </li>
-              <li className="pb-3 flex-1 border-gray-600 relative font-bold">
+              <li className="pb-3 flex-1 border-tertiary relative font-bold">
                 Security
-                <div className="absolute bottom-0 w-full h-1 bg-gray-600 rounded"></div>
+                <div className="absolute bottom-0 w-full h-1 bg-tertiary rounded"></div>
               </li>
-              <li className="pb-3 flex-1 border-gray-600 relative font-bold">
+              <li className="pb-3 flex-1 border-tertiary relative font-bold">
                 Others
-                <div className="absolute bottom-0 w-full h-1 bg-gray-600 rounded"></div>
+                <div className="absolute bottom-0 w-full h-1 bg-tertiary rounded"></div>
               </li>
-              <li className="pb-3 flex-1 border-gray-600 relative font-bold">
+              <li className="pb-3 flex-1 border-tertiary relative font-bold">
                 Support
-                <div className="absolute bottom-0 w-full h-1 bg-gray-600 rounded"></div>
+                <div className="absolute bottom-0 w-full h-1 bg-tertiary rounded"></div>
               </li>
-              <li className="pb-3 flex-1 border-gray-600 relative font-bold">
+              <li className="pb-3 flex-1 border-tertiary relative font-bold">
                 Hosting
-                <div className="absolute bottom-0 w-full h-1 bg-gray-600 rounded"></div>
+                <div className="absolute bottom-0 w-full h-1 bg-tertiary rounded"></div>
               </li>
-              <li className="pb-3 flex-1 border-gray-600 relative font-bold">
+              <li className="pb-3 flex-1 border-tertiary relative font-bold">
                 Support
-                <div className="absolute bottom-0 w-full h-1 bg-gray-600 rounded"></div>
+                <div className="absolute bottom-0 w-full h-1 bg-tertiary rounded"></div>
               </li>
             </ul>
           </nav>
