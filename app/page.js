@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <>
-      <div className=" h-screen" style={{ backgroundColor: "#191919" }}>
+      <div className=" h-screen" style={{ backgroundColor: "#191919", fontFamily: "Gellix" }}>
         <header className=" p-10" style={{ backgroundColor: "#202020" }}>
           <div className="header-top flex justify-between items-center mb-10">
             <div className="flex w-10 justify-between gap-0.5">

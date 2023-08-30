@@ -2,3 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Gellix';
+  src: url('../font/Gellix-Bold.eot');
+  src: local('Gellix Bold'), local('Gellix-Bold'),
+      url('../font/Gellix-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Gellix-Bold.woff2') format('woff2'),
+      url('../font/Gellix-Bold.woff') format('woff'),
+      url('../font/Gellix-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gellix';
+  src: url('../font/Gellix-SemiBold.eot');
+  src: local('Gellix SemiBold'), local('Gellix-SemiBold'),
+      url('../font/Gellix-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Gellix-SemiBold.woff2') format('woff2'),
+      url('../font/Gellix-SemiBold.woff') format('woff'),
+      url('../font/Gellix-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gellix';
+  src: url('../font/Gellix-Regular.eot');
+  src: local('Gellix Regular'), local('Gellix-Regular'),
+      url('../font/Gellix-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/Gellix-Regular.woff2') format('woff2'),
+      url('../font/Gellix-Regular.woff') format('woff'),
+      url('../font/Gellix-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gellix';
+  src: url('../font/Gellix-Medium.eot');
+  src: local('Gellix Medium'), local('Gellix-Medium'),
+      url('../font/Gellix-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../font/Gellix-Medium.woff2') format('woff2'),
+      url('../font/Gellix-Medium.woff') format('woff'),
+      url('../font/Gellix-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
