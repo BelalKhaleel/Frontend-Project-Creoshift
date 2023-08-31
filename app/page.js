@@ -1,9 +1,22 @@
+'use client'
+ 
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Page() {
+  const [sliderValue, setSliderValue] = useState(12);
+
+  const handleSliderChange = (event) => {
+    const newValue = parseInt(event.target.value);
+    setSliderValue(newValue);
+  };
+
   return (
     <>
-      <div className=" h-screen" style={{ backgroundColor: "#191919", fontFamily: "Gellix" }}>
+      <div
+        className=" h-screen"
+        style={{ backgroundColor: "#191919", fontFamily: "Gellix" }}
+      >
         <header className=" p-10" style={{ backgroundColor: "#202020" }}>
           <div className="header-top flex justify-between items-center mb-10">
             <div className="flex w-10 justify-between gap-0.5">
@@ -101,32 +114,33 @@ export default function Page() {
             <p className="mb-16 mt-2" style={{ color: "#7E7E7E" }}>
               Lorem ipsum dolor sit amet consetetur elitr
             </p>
-            <h2 className="font-semibold" style={{ color: "#DEDEDE" }}>Total Pages*</h2>
+            <h2 className="font-semibold" style={{ color: "#DEDEDE" }}>
+              Total Pages*
+            </h2>
             <div className="flex justify-between">
               <span className="mt-3.5" style={{ color: "#7E7E7E" }}>
-                <span className="text-2xl font-semibold" style={{ color: "#DEDEDE" }}>
-                  12
+                <span
+                  className="text-2xl font-semibold"
+                  style={{ color: "#DEDEDE" }}
+                >
+                  {sliderValue}
                 </span>{" "}
                 pages
               </span>
               <span className="text-xl" style={{ color: "#DEDEDE" }}>
-                + 2,000$
+                + {sliderValue * 1000}$
               </span>
             </div>
-            <div className="progress-bar relative mt-7 ">
-              <div
-                className="absolute bottom-0 w-full h-2 rounded"
-                style={{ backgroundColor: "#5D5D5D" }}
-              ></div>
-              <span
-                className="w-8 h-8 bg-white absolute rounded-full"
-                style={{ left: "26.125rem", bottom: "-0.7rem" }}
-              ></span>
-              <span
-                className="w-5 h-5 bg-black absolute -bottom-1.5 rounded-full z-10"
-                style={{ left: "26.5rem" }}
-              ></span>
-              <div className="absolute bottom-0 w-1/2 h-2 bg-white rounded"></div>
+            <div className="slidecontainer w-full ">
+              <input
+                type="range"
+                min="0"
+                max="24"
+                value={sliderValue}
+                onChange={handleSliderChange}
+                className="slider w-full cursor-pointer "
+                id="myRange"
+              />
             </div>
             <span className="inline-block mt-6" style={{ color: "#7E7E7E" }}>
               project with more than 30 pages with get a 10% discount
