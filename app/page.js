@@ -30,15 +30,16 @@ export default function Page() {
                   <div className={`h-1 w-1 rounded ${isLightTheme ? 'light-theme-logo' : 'dark-theme-logo'}`}></div>
                 </div>
               </Link>
-              <Link href="#">
+              <div className="crescent-logo-container">
                 <Image
                   src={`${isLightTheme ? "/icons8-crescent-96 light.png" : "/icons8-crescent-96.png"}`}
                   width={48}
                   height={50}
                   onClick={handleThemeToggle}
+                  className="cursor-pointer"
                   alt="Icon of the crescent"
                 />
-              </Link>
+              </div>
             </div>
             <nav className="text-sm text-[#5D5D5D]">
               <ul className="md:flex md:flex-row flex flex-col gap-3 justify-center text-tertiary">
