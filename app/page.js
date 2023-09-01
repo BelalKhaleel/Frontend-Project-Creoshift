@@ -1,5 +1,6 @@
 "use client";
 
+import "./page.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -14,7 +15,7 @@ export default function Page() {
 
   return (
     <>
-      <div className=" bg-[#191919] font-[Gellix]">
+      <div className="min-h-screen bg-[#191919] font-[Gellix]">
         <header className=" p-10 pt-5 bg-[#202020]">
           <div className="header-container container mx-auto">
             <div className="header-top flex justify-between items-center mb-10">
@@ -124,15 +125,14 @@ export default function Page() {
                 + {sliderValue * 1000}$
               </span>
             </div>
-            <div className="slidecontainer w-full ">
+            <div className="slider-container">
               <input
                 type="range"
                 min="0"
                 max="24"
                 value={sliderValue}
                 onChange={handleSliderChange}
-                className="slider w-full cursor-pointer "
-                id="myRange"
+                className="w-full"
               />
             </div>
             <span className="inline-block mt-6 text-[#7E7E7E]">
