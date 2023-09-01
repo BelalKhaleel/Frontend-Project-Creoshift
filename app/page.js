@@ -132,7 +132,7 @@ export default function Page() {
                 max="24"
                 value={sliderValue}
                 onChange={handleSliderChange}
-                className="w-full"
+                className="w-full cursor-pointer h-2.5 bg-[#333333] rounded-3xl"
               />
             </div>
             <span className="inline-block mt-6 text-[#7E7E7E]">
