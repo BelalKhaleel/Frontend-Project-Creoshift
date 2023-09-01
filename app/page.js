@@ -36,7 +36,7 @@ export default function Page() {
               </Link>
             </div>
             <nav className="text-sm text-[#5D5D5D]">
-              <ul className="flex gap-3 justify-center text-tertiary">
+              <ul className="md:flex md:flex-row flex flex-col gap-3 justify-center text-tertiary">
                 <Link href="#" className="pb-3 flex-1 relative font-bold">
                   Pages
                   <div className="absolute bottom-0 w-full h-1 bg-white rounded"></div>
@@ -105,7 +105,7 @@ export default function Page() {
             </nav>
           </div>
         </header>
-        <main className="container mx-auto mt-8 flex justify-around">
+        <main className="container mx-auto mt-8 md:flex md:flex-row md:justify-around flex flex-col items-center gap-11">
           <div className="left-content w-2/4 pt-5">
             <h1 className="text-xl font-bold text-[#DEDEDE]">
               Select Pages Information
