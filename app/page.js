@@ -3,6 +3,7 @@
 import "./page.css";
 import Image from "next/image";
 import Link from "next/link";
+import Control from "./control";
 import { useState } from "react";
 
 export default function Page() {
@@ -179,16 +180,7 @@ export default function Page() {
                 + {sliderValue * 1000}$
               </span>
             </div>
-            <div className=" mt-4">
-              <input
-                type="range"
-                min="0"
-                max="24"
-                value={sliderValue}
-                onChange={handleSliderChange}
-                className="slider-container w-full cursor-pointer h-2.5 bg-[#333333] rounded-3xl"
-              />
-            </div>
+            <Control />
             <span className="inline-block mt-6 text-[#7E7E7E]">
               project with more than 30 pages with get a 10% discount
             </span>
