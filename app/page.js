@@ -26,7 +26,7 @@ export default function Page() {
         }`}
       >
         <header
-          className={`p-10 pt-4 h-32 ${
+          className={`p-10 pt-4 md:h-32 ${
             isLightTheme ? "light-theme-header" : "dark-theme-header"
           }`}
         >
@@ -143,7 +143,7 @@ export default function Page() {
           </div>
         </header>
         <main className="container mx-auto mt-8 md:flex md:flex-row md:justify-around flex flex-col items-center gap-11">
-          <div className="left-content md:self-start w-2/4 pt-5 ml-5">
+          <div className="left-content md:self-start md:w-2/4 pt-5 ml-5">
             <h1
               className={`text-xl font-bold ${
                 isLightTheme ? "text-[#7E7E7E]" : "text-[#DEDEDE]"
