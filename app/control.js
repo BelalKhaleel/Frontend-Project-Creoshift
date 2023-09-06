@@ -4,22 +4,24 @@ import { useState } from "react";
 
 const Control = ({ onVolumeChange }) => {
   const [volume, setVolume] = useState(0);
+
   const handleChange = (event) => {
     const newVolume = parseInt(event.target.value);
     setVolume(newVolume);
+    onVolumeChange(newVolume);
   };
 
   const gradient = `linear-gradient(to left, #333333, #333333 ${
-    100 - (volume / 4000) * 100
+    100 - (volume / 24) * 100
   }%,
-    #ECECEC ${100 - (volume / 4000) * 100}%, #ECECEC 100%)`;
+    #ECECEC ${100 - (volume / 24) * 100}%, #ECECEC 100%)`;
 
   return (
     <div className="w-full h-8 relative sm:my-4">
       <input
         type="range"
         min="0"
-        max="4000"
+        max="24"
         step="1"
         value={volume}
         onChange={handleChange}
@@ -28,7 +30,6 @@ const Control = ({ onVolumeChange }) => {
           WebkitAppearance: "none",
           appearance: "none",
           width: "100%",
-          // height: '9px',
           background: gradient,
           outline: "none",
           border: "none",

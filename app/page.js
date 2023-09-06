@@ -10,9 +10,8 @@ export default function Page() {
   const [sliderValue, setSliderValue] = useState(12);
   const [isLightTheme, setisLightTheme] = useState(false);
 
-  const handleSliderChange = (event) => {
-    const newValue = parseInt(event.target.value);
-    setSliderValue(newValue);
+  const handleSliderValueChange = (newSliderValue) => {
+    setSliderValue(newSliderValue);
   };
 
   const handleThemeToggle = () => {
@@ -55,8 +54,8 @@ export default function Page() {
                 <Image
                   src={`${
                     isLightTheme
-                      ? "/icons8-crescent-96 light.png"
-                      : "/icons8-crescent-96.png"
+                      ? "/images/crescent-light.png"
+                      : "/images/crescent-dark.png"
                   }`}
                   width={40}
                   height={46}
@@ -180,7 +179,7 @@ export default function Page() {
                 + {sliderValue * 1000}$
               </span>
             </div>
-            <Control />
+            <Control onVolumeChange={handleSliderValueChange}/>
             <span className="inline-block mt-6 text-[#7E7E7E]">
               project with more than 30 pages with get a 10% discount
             </span>
